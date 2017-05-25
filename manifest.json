@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Feminizer",
+	"version": "1.0",
+	"description": "turns all male pronouns into female pronouns",
+	"icons": {
+		"16": "f16.png",
+		"48": "f48.png",
+		"96": "f96.png",
+		"128": "f128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.babycenter.com/*"],
+			"js": ["feminizer.js"]
+		}
+	]
+}

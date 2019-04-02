@@ -1,7 +1,6 @@
 function feminize (oldtext, newtext) {
 	const nil = null 
-	, regex1 = new RegExp(' '+oldtext+' ', 'gi')
-	, regex2 = new RegExp(' '+oldtext+'. ', 'gi')
+	, regex1 = new RegExp(oldtext, 'gi')
 	;
 
 	console.log("text replaced: ", regex1, regex2);
@@ -10,10 +9,17 @@ function feminize (oldtext, newtext) {
 	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex2, ' '+newtext+'. ')
 }
 
-feminize('his', 'hers')
-feminize('him', 'her')
-feminize('he', 'she')
-feminize("he'll", "she'll")
-feminize("he's", "she's")
+feminize(' he ', ' she ')
+feminize(' he. ', ' she. ')
+feminize(' his ', ' her ')
+feminize(' his. ', ' her. ')
+feminize(' him ', ' her ')
+feminize(' him. ', ' her. ')
+feminize(" he'll ", " she'll")
+feminize(" he'll. ", " she'll. ")
+feminize(" he's ", " she's ")
+feminize(" he's. ", " she's. ")
+feminize(" himelf ", " herself ")
+feminize(" himelf. ", " herself. ")
 
 console.log("this page has been feminized")

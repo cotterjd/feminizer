@@ -3,10 +3,9 @@ function feminize (oldtext, newtext) {
 	, regex1 = new RegExp(oldtext, 'gi')
 	;
 
-	console.log("text replaced: ", regex1, regex2);
+	console.log("text replaced: ", regex1);
 	console.log("replaced with: ", newtext);
-	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex1, ' '+newtext+' ')
-	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex2, ' '+newtext+'. ')
+	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex1, newtext)
 }
 
 feminize(' he ', ' she ')

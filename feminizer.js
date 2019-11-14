@@ -1,7 +1,5 @@
 function feminize (oldtext, newtext) {
-	const nil = null 
-	, regex1 = new RegExp(oldtext, 'gi')
-	;
+	const regex1 = new RegExp(oldtext, 'gi')
 
 	console.log("text replaced: ", regex1);
 	console.log("replaced with: ", newtext);

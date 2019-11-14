@@ -1,7 +1,7 @@
 function feminize (oldtext, newtext) {
-	const regex1 = new RegExp(oldtext, 'gi')
+  const regex1 = new RegExp(oldtext, 'gi')
 	
-	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex1, newtext)
+  document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex1, newtext)
 }
 
 feminize(' he ', ' she ')

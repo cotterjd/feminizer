@@ -1,8 +1,6 @@
 function feminize (oldtext, newtext) {
 	const regex1 = new RegExp(oldtext, 'gi')
-
-	console.log("text replaced: ", regex1);
-	console.log("replaced with: ", newtext);
+	
 	document.querySelectorAll('.bodyText')[0].innerHTML = document.querySelectorAll('.bodyText')[0].innerHTML.replace(regex1, newtext)
 }
 
